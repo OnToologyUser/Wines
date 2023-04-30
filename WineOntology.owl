@@ -1,0 +1,775 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://www.semanticweb.org/michael/ontologies/2023/3/Wines"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://www.semanticweb.org/michael/ontologies/2023/3/Wines">
+    <Prefix name="" IRI="https://www.semanticweb.org/michael/ontologies/2023/3/Wines/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="#Abstract"/>
+        <Literal>A representation of Wines, particularly Spanish wines, with their respective characteristics (age, type, etc.)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#Author"/>
+        <Literal>Michael Meira</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#Title"/>
+        <Literal>Wines Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Asia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Benefits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breeding_Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Culinary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Europe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Great_Reserve_Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicinal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reserve_Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#White"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine_Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine_Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine_Use"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_benefits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_category"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_wine_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_wine_use"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_degree"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_fruit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_quantity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_year"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toro_Albala"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#Abstract"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#Title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#abstract"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Type"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_wine_type"/>
+            <Class IRI="#Type"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Wine"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#is_wine_type"/>
+            <Class IRI="#Wine"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Asia"/>
+        <Class IRI="#Continent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breeding_Wine"/>
+        <Class IRI="#Wine_Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Wine_Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Culinary"/>
+        <Class IRI="#Wine_Use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drink"/>
+        <Class IRI="#Wine_Use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Europe"/>
+        <Class IRI="#Continent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Great_Reserve_Wine"/>
+        <Class IRI="#Wine_Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicinal"/>
+        <Class IRI="#Wine_Use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pink"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Red"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <Class IRI="#Spain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reserve_Wine"/>
+        <Class IRI="#Wine_Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spain"/>
+        <Class IRI="#Europe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type"/>
+        <Class IRI="#Wine_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#White"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wine_Category"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wine_Location"/>
+        <Class IRI="#Wine_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wine_Use"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Breeding_Wine"/>
+        <Class IRI="#Great_Reserve_Wine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Breeding_Wine"/>
+        <Class IRI="#Reserve_Wine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Great_Reserve_Wine"/>
+        <Class IRI="#Reserve_Wine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pink"/>
+        <Class IRI="#Red"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pink"/>
+        <Class IRI="#White"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Red"/>
+        <Class IRI="#White"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Breeding_Wine"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Medicinal"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pink"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spain"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breeding_Wine"/>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drink"/>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spain"/>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#White"/>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breeding_Wine"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drink"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Red"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spain"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drink"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Red"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reserve_Wine"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spain"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Culinary"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Great_Reserve_Wine"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Red"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spain"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_degree"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_description"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+        <Literal>Color rosa muy tenue el resultado de la unión de las distintas variedades de uvas tintas y blancos utilizadas en nuestros productos. amable, cautivador con aromas a frutas frescas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_fruit"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_quantity"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+        <Literal>1 L</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_year"/>
+        <NamedIndividual IRI="#Lussory_Rosé"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_degree"/>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_fruit"/>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_quantity"/>
+        <NamedIndividual IRI="#Majuelo_Los_Picones"/>
+        <Literal>1 L</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_degree"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">17.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_description"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+        <Literal>alorado por ser una rareza, denso y muy dulce, está elaborado con racimos 100% de uvas pasificadas Pedro Ximénez. El origen de este excepcional vino es el resultado de la selección personal de Antonio Sánchez y de su elección del momento óptimo para ser embotellado. Una auténtica joya de nuestra bodega distinguida con 100 puntos Robert Parker, el primer vino dulce en recibir este reconocimiento.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_fruit"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1027.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_quantity"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+        <Literal>75 cl</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_year"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1946</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_degree"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_description"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+        <Literal>Nariz de tierra mojada, con un toque de reducción: eso es lo que hace la variedad tempranillo en su fase juvenil para protegerse del envejecimiento prematuro. Auténtica fragancia a suelo de bosque.Gusto magnífico a frutos rojos y a sotobosque.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_fruit"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">992.26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_quantity"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+        <Literal>75 cl</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_year"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_degree"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_description"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+        <Literal>Nariz muy compleja co frutos rojos. Le acompañan aromas balsámicos, cedro, caja de puros. En boca se presenta con un ataque fino, paso de boca firme sin estridencias y un fin de boca basado en su mineralidad.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_fruit"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">542.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_quantity"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+        <Literal>75 cl</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_year"/>
+        <NamedIndividual IRI="#Vega_Sicilia_Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2007</Literal>
+    </DataPropertyAssertion>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_benefits"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_category"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_location"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#is_wine_type"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#is_wine_use"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_benefits"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_category"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_location"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_wine_type"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_wine_use"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_benefits"/>
+        <Class IRI="#Benefits"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_category"/>
+        <Class IRI="#Wine_Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_location"/>
+        <Class IRI="#Wine_Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_wine_type"/>
+        <Class IRI="#Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_wine_use"/>
+        <Class IRI="#Wine_Use"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_degree"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_description"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_fruit"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_price"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_quantity"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_year"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_degree"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_fruit"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_price"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_quantity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_year"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Asia</IRI>
+        <Literal>A representation of one of the continents known as Asia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Benefits</IRI>
+        <Literal>A representation of the possible benefits that can be obtained by the different ways of consuming wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Breeding_Wine</IRI>
+        <Literal>A representation of the breeding wine category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Continent</IRI>
+        <Literal>A representation of the world continents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Culinary</IRI>
+        <Literal>A representation of the possible uses, in the culinary field, of wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Drink</IRI>
+        <Literal>A representation of the possible uses of wine as a beverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Europe</IRI>
+        <Literal>A representation of one of the continents known as Europe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Great_Reserve_Wine</IRI>
+        <Literal>A representation of the great reserve wine category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Medicinal</IRI>
+        <Literal>A representation of the possible uses, in the medicinal field, of wine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pink</IRI>
+        <Literal>A representation of the pink type of wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Red</IRI>
+        <Literal>A representation of the red type of wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region</IRI>
+        <Literal>A representation of the regions of Spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reserve_Wine</IRI>
+        <Literal>A representation of the reserve wine category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Spain</IRI>
+        <Literal>A representation of one of the countries known as Spain from the European continent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Type</IRI>
+        <Literal>A representation of the possible types of wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#White</IRI>
+        <Literal>A representation of the white type of wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine</IRI>
+        <Literal>A representation of the main theme that is being discussed, aka the Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine_Category</IRI>
+        <Literal>A representation of the different categories that a wine can have</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine_Information</IRI>
+        <Literal>A representation with basic information regarding the production, location and characteristics of the wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine_Location</IRI>
+        <Literal>A representation of the world locations where wine is traded, produced,...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine_Use</IRI>
+        <Literal>A representation of the possible uses that can be given to the wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_benefits</IRI>
+        <Literal>una propiedad de objeto para definir qué beneficios tiene un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_category</IRI>
+        <Literal>an object property to define which category has a wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_degree</IRI>
+        <Literal>a Data property to define if a wine has alcohol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_description</IRI>
+        <Literal>a data property that defines the description of the wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_fruit</IRI>
+        <Literal>a Data property to define if the wine is made with fruits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_location</IRI>
+        <Literal>an object property to define which location has a wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_price</IRI>
+        <Literal>a data property that defines the standard price of wine in spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_quantity</IRI>
+        <Literal>a Data property to define the quantity of wine (1 liter, 70cl, etc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_year</IRI>
+        <Literal>a data property that defines the year of production of the wine to determine what its category of wine will be</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_wine_type</IRI>
+        <Literal>an object property to define the wine type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_wine_use</IRI>
+        <Literal>an object property to define the wine uses</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
